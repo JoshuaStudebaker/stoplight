@@ -1,0 +1,60 @@
+:root {
+  --background-with-stripes: repeating-linear-gradient(
+    45deg,
+    black,
+    darkgrey 1px,
+    black 5px
+  );
+
+  --red-light: red;
+  --yellow-light: yellow;
+  --green-light: green;
+  --stoplight-color: rgb(105, 104, 104);
+}
+
+body {
+  background: var(--background-with-stripes);
+}
+
+.red-light {
+  background-color: var(--red-light);
+}
+
+.yellow-light {
+  background-color: var(--yellow-light);
+}
+
+.green-light {
+  background-color: var(--green-light);
+}
+
+.circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 1px 0;
+  margin: auto;
+}
+
+.stoplight-top {
+  height: 8px;
+  width: 4px;
+  background-color: var(--stoplight-color);
+  margin: auto;
+}
+
+.stoplight-main {
+  height: 35px;
+  width: 14px;
+  margin: auto;
+  background-color: var(--stoplight-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.green-glowing {
+  box-shadow: 0.25px limegreen;
+  border: 1px solid rgb(163, 231, 163);
+  margin: auto;
+}
